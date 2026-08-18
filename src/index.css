@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #3B2D4A;
+    background-color: #FAF6FD;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-handwritten {
+    font-family: 'Caveat', 'Patrick Hand', cursive;
+  }
+
+  .font-script {
+    font-family: 'Patrick Hand', cursive;
+  }
+}
+
+/* Subtle paper texture effect */
+.paper-texture {
+  background-color: #FDFBF7;
+  background-image: 
+    radial-gradient(#E8DDF0 0.75px, transparent 0.75px), 
+    radial-gradient(#FAF0EB 0.75px, #FDFBF7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Subtle lined paper texture for the letter */
+.letter-paper {
+  background-color: #FAF6F0;
+  background-image: linear-gradient(rgba(189, 163, 219, 0.15) 1px, transparent 1px);
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+/* Washi tape styling */
+.washi-tape-lavender {
+  background: rgba(205, 181, 238, 0.75);
+  box-shadow: 0 1px 3px rgba(94, 61, 130, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+.washi-tape-pink {
+  background: rgba(247, 214, 224, 0.8);
+  box-shadow: 0 1px 3px rgba(180, 80, 120, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom soft scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6FD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4BBFC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA2DB;
+}
+
+/* Floating animation utilities */
+@keyframes floatParticle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-12px) rotate(4deg);
+    opacity: 1;
+  }
+}
+
+.animate-float-particle {
+  animation: floatParticle 5s ease-in-out infinite;
+}
+
+/* Smooth motion reduction */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
