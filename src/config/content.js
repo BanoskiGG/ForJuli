@@ -20,7 +20,7 @@ export const contentConfig = {
   // SCREEN 1 — OPENING
   opening: {
     greeting: "May itatanong sana ako.",
-    subtext: "Kaso... medyo kinakabahan akong sabihin normally.",
+    subtext: "uhm kaso medyo nahihiya ako sabihin in person? HAHAHA",
     buttonText: "Sige, ano? ♡",
   },
 
