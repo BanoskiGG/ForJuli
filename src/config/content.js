@@ -13,8 +13,8 @@ export const contentConfig = {
   senderName: "Andrei",
 
   // Background Music (YouTube Video ID)
-  // URL: https://www.youtube.com/watch?v=oInO5jx600E -> ID is 'oInO5jx600E'
-  youtubeVideoId: "oInO5jx600E",
+  // URL: https://www.youtube.com/watch?v=xO78bGYEMEs -> ID is 'xO78bGYEMEs'
+  youtubeVideoId: "xO78bGYEMEs",
   musicLabel: "♫ Background Melody",
 
   // SCREEN 1 — OPENING

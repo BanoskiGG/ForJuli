@@ -14,7 +14,7 @@ A soft, romantic, purple scrapbook-themed interactive web app designed to ask a 
   6. Sincere, pressure-free question with equal choices ("Yes, I'd like that ♡" and "I'd like some time to think")
   7. Gentle celebration response or respectful understanding response
   8. Chapter 01 scrapbook with sweet intention cards and optional Polaroid photos.
-- **YouTube Background Music**: Hidden YouTube IFrame API audio player (`oInO5jx600E`) with floating music control.
+- **YouTube Background Music**: Hidden YouTube IFrame API audio player (`xO78bGYEMEs`) with floating music control.
 - **Vercel Ready**: Ready to deploy with zero backend requirements.
 
 ---
@@ -49,7 +49,7 @@ letter: {
 ### 3. Change Background Music
 In `src/config/content.js`, change `youtubeVideoId`:
 ```javascript
-youtubeVideoId: "oInO5jx600E", // Change to any YouTube Video ID
+youtubeVideoId: "xO78bGYEMEs", // Change to any YouTube Video ID
 ```
 
 ### 4. Add Real Photos (Optional Polaroid Cards)
